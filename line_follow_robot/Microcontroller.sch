@@ -1,0 +1,179 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 5FEED97D
+P 7450 3550
+F 0 "U?" H 7450 1961 50  0000 C CNN
+F 1 "ATmega328P-AU" H 7450 1870 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7450 3550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-5.0 U?
+U 1 1 5FEEEBD6
+P 2850 1550
+F 0 "U?" H 2850 1792 50  0000 C CNN
+F 1 "AMS1117-5.0" H 2850 1701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2850 1750 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2950 1300 50  0001 C CNN
+	1    2850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FEF53B3
+P 1100 1400
+F 0 "#PWR?" H 1100 1250 50  0001 C CNN
+F 1 "VCC" H 1115 1573 50  0000 C CNN
+F 2 "" H 1100 1400 50  0001 C CNN
+F 3 "" H 1100 1400 50  0001 C CNN
+	1    1100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D?
+U 1 1 5FEF6400
+P 1400 1550
+F 0 "D?" H 1400 1343 50  0000 C CNN
+F 1 "B5819W" H 1400 1434 50  0000 C CNN
+F 2 "" V 1400 1550 50  0001 C CNN
+F 3 "~" V 1400 1550 50  0001 C CNN
+	1    1400 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5FEF77AC
+P 1900 1550
+F 0 "FB?" V 2137 1550 50  0000 C CNN
+F 1 "100 @ 100MHz" V 2046 1550 50  0000 C CNN
+F 2 "" V 1830 1550 50  0001 C CNN
+F 3 "~" H 1900 1550 50  0001 C CNN
+	1    1900 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEFFE76
+P 2250 1750
+F 0 "C?" H 2342 1796 50  0000 L CNN
+F 1 "10u" H 2342 1705 50  0000 L CNN
+F 2 "" H 2250 1750 50  0001 C CNN
+F 3 "~" H 2250 1750 50  0001 C CNN
+	1    2250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FF006E8
+P 3300 1750
+F 0 "C?" H 3392 1796 50  0000 L CNN
+F 1 "10u" H 3392 1705 50  0000 L CNN
+F 2 "" H 3300 1750 50  0001 C CNN
+F 3 "~" H 3300 1750 50  0001 C CNN
+	1    3300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FF0679D
+P 3300 1400
+F 0 "#PWR?" H 3300 1250 50  0001 C CNN
+F 1 "+5V" H 3315 1573 50  0000 C CNN
+F 2 "" H 3300 1400 50  0001 C CNN
+F 3 "" H 3300 1400 50  0001 C CNN
+	1    3300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF08F28
+P 2850 1950
+F 0 "#PWR?" H 2850 1700 50  0001 C CNN
+F 1 "GND" H 2855 1777 50  0000 C CNN
+F 2 "" H 2850 1950 50  0001 C CNN
+F 3 "" H 2850 1950 50  0001 C CNN
+	1    2850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5FF09A73
+P 3550 1550
+F 0 "D?" H 3550 1343 50  0000 C CNN
+F 1 "Red" H 3550 1434 50  0000 C CNN
+F 2 "" V 3550 1550 50  0001 C CNN
+F 3 "~" V 3550 1550 50  0001 C CNN
+	1    3550 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FF0AD14
+P 3800 1750
+F 0 "R?" H 3859 1796 50  0000 L CNN
+F 1 "2k2" H 3859 1705 50  0000 L CNN
+F 2 "" H 3800 1750 50  0001 C CNN
+F 3 "~" H 3800 1750 50  0001 C CNN
+	1    3800 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1400 1100 1550
+Wire Wire Line
+	1100 1550 1300 1550
+Wire Wire Line
+	1500 1550 1800 1550
+Wire Wire Line
+	2000 1550 2250 1550
+Wire Wire Line
+	2250 1650 2250 1550
+Connection ~ 2250 1550
+Wire Wire Line
+	2250 1550 2550 1550
+Wire Wire Line
+	2250 1850 2250 1950
+Wire Wire Line
+	2250 1950 2850 1950
+Wire Wire Line
+	3300 1850 3300 1950
+Wire Wire Line
+	3300 1950 2850 1950
+Connection ~ 2850 1950
+Wire Wire Line
+	2850 1850 2850 1950
+Wire Wire Line
+	3150 1550 3300 1550
+Wire Wire Line
+	3300 1650 3300 1550
+Connection ~ 3300 1550
+Wire Wire Line
+	3300 1400 3300 1550
+Wire Wire Line
+	3300 1550 3450 1550
+Wire Wire Line
+	3650 1550 3800 1550
+Wire Wire Line
+	3800 1550 3800 1650
+Wire Wire Line
+	3800 1850 3800 1950
+Wire Wire Line
+	3800 1950 3300 1950
+Connection ~ 3300 1950
+$EndSCHEMATC
